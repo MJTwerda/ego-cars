@@ -1,14 +1,9 @@
-export enum TabValue {
-  MODELS = 'models',
-  MODELS_TAB = 'modelsTab',
-};
-
 export enum TabColors {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
 }
 
-export interface TabI {
-  value: TabValue;
+export interface NavigationTabI {
   label: string | null;
+  path: string;
 };

@@ -3,7 +3,6 @@ import { Divider, IconButton, ListItemIcon, Menu, MenuItem } from "@mui/material
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { MenuItemI } from './menu.interfaces';
 
@@ -12,7 +11,6 @@ interface CommonMenuProps {
 }
 
 const CommonMenu = ({ menuItems }: CommonMenuProps) => {
-  const router = useRouter();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -22,10 +20,6 @@ const CommonMenu = ({ menuItems }: CommonMenuProps) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
-  const handleNavigateByItem = (path: string) => {
-    router.push(path);
-  }
 
   return (
     <div>
@@ -62,7 +56,7 @@ const CommonMenu = ({ menuItems }: CommonMenuProps) => {
                   </MenuItem>
                 ) : (
                   <MenuItem
-                    className='w-56 justify-end'
+                    className='w-56 justify-end mr-9'
                     onClick={() => menuItem.handleClick && menuItem.handleClick}
                   >
                     {menuItem.label}

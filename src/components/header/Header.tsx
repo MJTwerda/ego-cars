@@ -1,92 +1,10 @@
-import { Box } from "@mui/material";
+import { menuItems } from "@/data/headerMenu";
+import { headerTabs } from "@/data/headerTabs";
 import Image from "next/image";
-import egoCarsLogo from '../../../public/ego-cars-logo.png';
 import CommonMenu from "../menu/Menu";
-import { MenuItemI } from "../menu/menu.interfaces";
-import CommonTabs from "../tabs/Tabs";
-import { TabValue } from '../tabs/tabs.interfaces';
+import NavigationTabs from "../tabs/NavigationTabs";
 
 const Header = () => {
-
-  // TODO: Llevar esta data a un archivo aparte
-  const headerTabs =[
-    {
-    value: TabValue.MODELS,
-    label: 'Modelos'
-    }, {
-    value: TabValue.MODELS_TAB,
-    label: 'Ficha de Modelo'
-  }];
-
-  const menuItems: MenuItemI[] = [
-    {
-      label: 'Modelos',
-      path: 'models',
-    },
-    {
-      label: 'Servicios y Accesorios',
-      path: 'services-and-accessories',
-    },
-    {
-      label: 'Financiación',
-      path: 'financing',
-    },
-    {
-      label: 'Reviews y Comunidad',
-      path: 'reviews-and-community',
-      bottomDivider: true,
-    },
-    {
-      label: 'Toyota Mobility Service',
-      path: 'toyota-1',
-    },
-    {
-      label: 'Toyota Gazoo Racing',
-      path: 'toyota-2',
-    },
-    {
-      label: 'Toyota Híbridos',
-      path: 'toyota-hybrid',
-      bottomDivider: true,
-    },
-    {
-      label: 'Concesionarios',
-      path: 'concessions',
-    },
-    {
-      label: 'Test Drive',
-      path: 'test-drive',
-    },
-    {
-      label: 'Contacto',
-      path: 'contact',
-      bottomDivider: true,
-    },
-    {
-      label: 'Actividades',
-      path: 'activities',
-    },
-    {
-      label: 'Servicios al Cliente',
-      path: 'client-services',
-    },
-    {
-      label: 'Ventas Especiales',
-      path: 'special-sales',
-    },
-    {
-      label: 'Innovación',
-      path: 'innovation',
-    },
-    {
-      label: 'Prensa',
-      path: 'press',
-    },
-    {
-      label: 'Acerca de...',
-      path: 'about',
-    }
-  ];
 
   return (
     <div className="flex justify-between m-4 border-b-2 border-b-opacity-40">
@@ -99,7 +17,7 @@ const Header = () => {
           className="mr-20"
         />
         <div className="hidden sm:flex">
-          <CommonTabs tabList={headerTabs} />
+          <NavigationTabs tabList={headerTabs} />
         </div>
       </div>
 
