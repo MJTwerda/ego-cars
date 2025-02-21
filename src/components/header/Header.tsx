@@ -8,13 +8,13 @@ const Header = () => {
 
   return (
     <div className="flex justify-between m-4 border-b-2 border-b-opacity-40">
-      <div className="flex w-2/4">
+      <div className="flex sm:w-2/4">
         <Image
           alt='Ego Cars logo'
           src={'/ego-logo.svg'}
           width={38}
           height={40}
-          className="mr-20"
+          className="sm:mr-20"
         />
         <div className="hidden sm:flex">
           <NavigationTabs tabList={headerTabs} />

@@ -4,5 +4,5 @@ export const headerTabs =[
   path: ''
   }, {
   label: 'Ficha de Modelo',
-  path: 'services-and-accessories'
+  path: 'model-sheet'
 }];

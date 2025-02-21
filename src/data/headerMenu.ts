@@ -7,7 +7,7 @@ export const menuItems: MenuItemI[] = [
   },
   {
     label: 'Servicios y Accesorios',
-    path: 'services-and-accessories',
+    path: 'model-sheet',
   },
   {
     label: 'Financiación',
