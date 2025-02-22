@@ -15,7 +15,6 @@ const NavigationTabs = ({tabList, textColor = TabColors.PRIMARY, indicatorColor 
   const [ currentTabPath, setCurrentTabPath ] = useState<string>('');
 
   const handleNavigateByTab = (e: React.SyntheticEvent, tabPath: string) => {
-    console.log({ tabPath });
     setCurrentTabPath(tabPath);
     router.push(`/${tabPath}`);
   }
