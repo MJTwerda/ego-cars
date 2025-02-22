@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { VehicleModelI } from "@/components/modelCard/models.interfaces";
 import { Typography } from "@mui/material";
 import FilterAndSortSection from "@/components/filterAndSortSection/FilterAndSortSection";
 
