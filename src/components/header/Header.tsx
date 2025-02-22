@@ -3,6 +3,7 @@ import { headerTabs } from "@/data/headerTabs";
 import Image from "next/image";
 import CommonMenu from "../menu/Menu";
 import NavigationTabs from "../tabs/NavigationTabs";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
 
@@ -21,7 +22,13 @@ const Header = () => {
         </div>
       </div>
 
-      <CommonMenu menuItems={menuItems} />
+      <CommonMenu 
+        menuLabel={{ label: 'Menu' }}
+        menuIconClosed={<MenuIcon />}
+        menuItems={menuItems} 
+        justifyItems='end' 
+        showCloseButton={true} 
+      />
     </div>
   )
 };
