@@ -21,7 +21,12 @@ const Header = () => {
         </div>
       </div>
 
-      <CommonMenu menuItems={menuItems} />
+      <CommonMenu 
+        menuLabel={{ label: 'Menu' }}
+        menuItems={menuItems} 
+        justifyItems='end' 
+        showCloseButton={true} 
+      />
     </div>
   )
 };
