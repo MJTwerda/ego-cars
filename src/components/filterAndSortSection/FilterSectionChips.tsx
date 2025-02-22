@@ -1,8 +1,7 @@
-import { vehicleFilterTabs } from '@/data/vehicleFilterTabs';
 import { Chip, Typography } from '@mui/material';
-import CommonMenu from '../menu/Menu';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import CommonMenu from '../menu/Menu';
 
 
 export interface FilterSectionLabelI {
@@ -15,6 +14,32 @@ interface FilterSectionChipsProps {
   filterLabel: FilterSectionLabelI;
 }
 const FilterSectionChips = ({ handleFilterModels, filterLabel }: FilterSectionChipsProps) => {
+
+  const vehicleFilterTabs = [
+    {
+      label: "Todos",
+      value: "all",
+      handleClick: () => handleFilterModels("all"),
+    },
+    {
+      label: "Autos",
+      value: "Sedan",
+      handleClick: () => handleFilterModels("Sedan"),
+
+    },
+    {
+      label: "Pickups y Comerciales",
+      value: "Pickups y Comerciales",
+      handleClick: () => handleFilterModels("Pickups y Comerciales"),
+
+    },
+    {
+      label: "SUVs y Crossovers",
+      value: "SUVs",
+      handleClick: () => handleFilterModels("SUVs"),
+
+    },
+  ];
 
   return (
     <div className='flex w-2/4 sm:w-3/4'>
