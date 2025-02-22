@@ -4,13 +4,10 @@ import { Typography } from "@mui/material";
 import FilterAndSortSection from "@/components/filterAndSortSection/FilterAndSortSection";
 
 const HomePage = async () => {
-  const getVehicleModels = async (): Promise<VehicleModelI[]> => {
-      const res = await fetch(
-        `${process.env.EGO_API}/models`, 
-        {
-          cache: "no-store",
-        }
-      );
+  const getVehicleModels = async () => {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/models`, {
+      cache: "no-store",
+    });
   
     if (!res.ok) throw new Error("Failed to fetch models");
     return res.json();
