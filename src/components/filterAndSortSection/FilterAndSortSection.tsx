@@ -6,6 +6,8 @@ import VehicleCard from '../modelCard/modelList';
 import FilterSectionChips from "./FilterSectionChips";
 import CommonMenu from "../menu/Menu";
 import { MenuItemI } from "../menu/menu.interfaces";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
 type FilterAndSortProps = { modelList: VehicleModelI[] };
 
@@ -100,6 +102,8 @@ export default function FilterAndSortSection({ modelList }: FilterAndSortProps) 
         
         <CommonMenu 
           menuLabel={{ label: "Ordenar por", isStrong: true }}
+          menuIconClosed={<ExpandMoreIcon />}
+          menuIconOpened={<ExpandLessIcon />}
           menuItems={vehicleSortMenu} 
           justifyItems='start' 
         />

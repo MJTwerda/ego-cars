@@ -1,6 +1,5 @@
 'use client'
 import { Divider, IconButton, ListItemIcon, Menu, MenuItem, Typography } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 import Link from "next/link";
@@ -8,12 +7,22 @@ import { MenuItemI, MenuLabelI } from './menu.interfaces';
 
 interface CommonMenuProps {
   menuLabel: MenuLabelI;
+  menuIconOpened?: React.ReactNode;
+  menuIconClosed: React.ReactNode;
   menuItems: MenuItemI[];
   showCloseButton?: boolean;
   justifyItems: 'start' | 'end';
 }
 
-const CommonMenu = ({ menuLabel, menuItems, showCloseButton, justifyItems }: CommonMenuProps) => {
+const CommonMenu = (
+  {
+    menuLabel,
+    menuIconOpened,
+    menuIconClosed,
+    menuItems,
+    showCloseButton,
+    justifyItems
+  }: CommonMenuProps) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
 
@@ -32,7 +41,7 @@ const CommonMenu = ({ menuLabel, menuItems, showCloseButton, justifyItems }: Com
         </Typography>
 
         <IconButton onClick={handleClick}>
-          <MenuIcon />
+          {open ? menuIconOpened || menuIconClosed : menuIconClosed}
         </IconButton>
 
         <Menu id="common-menu" anchorEl={anchorEl} open={open} onClose={handleClose}>
