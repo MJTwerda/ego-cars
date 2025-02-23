@@ -1,0 +1,21 @@
+import { NextResponse } from "next/server";
+
+export async function GET(req: Request, { params }: { params: { model_id: string } }) {
+  const { model_id } = params;
+
+  try {
+    const res = await fetch(`${process.env.EGO_API}/models/${model_id}`, {
+      cache: "no-store",
+    });
+
+    if (!res.ok) {
+      return NextResponse.json({ error: "Model not found" }, { status: 404 });
+    }
+
+    const modelData = await res.json();
+    return NextResponse.json(modelData);
+  } catch (error) {
+    console.error("Error fetching model:", error);
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
+}
