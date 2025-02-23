@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 
-const ModelSheetPage = async ({ searchParams }: { searchParams: { id: string } }) => {
+const ModelSheetPage = async ({ searchParams }: { searchParams?: { id?: string } }) => {
+  if (!searchParams || !searchParams?.id) return notFound();
+  
+  const { id } = await searchParams
 
   const getVehicleModelById = async (modelId: string) => {
-    if (!searchParams.id) return notFound();
     
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/models/${modelId}`, {
@@ -19,7 +21,8 @@ const ModelSheetPage = async ({ searchParams }: { searchParams: { id: string } }
     }
   };
 
-  const modelDetails = await getVehicleModelById(searchParams.id);
+  const modelDetails = await getVehicleModelById(searchParams?.id);
+  if (!modelDetails) return notFound();
 
   return (
     <>
