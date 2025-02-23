@@ -1,9 +1,12 @@
 import { notFound } from "next/navigation";
 
-const ModelSheetPage = async ({ searchParams }: { searchParams?: { id?: string } }) => {
+interface ModelSheetPageProps {
+  searchParams?: Promise<{ id?: string }>
+}
+
+const ModelSheetPage = async (props: ModelSheetPageProps) => {
+  const searchParams = await props.searchParams;
   if (!searchParams || !searchParams?.id) return notFound();
-  
-  const { id } = await searchParams
 
   const getVehicleModelById = async (modelId: string) => {
     

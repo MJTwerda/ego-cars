@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request, { params }: { params: { model_id: string } }) {
+interface GetDetailsProps { params: Promise<{ model_id: string }> }
+export async function GET(req: Request, props: GetDetailsProps) {
+  const params = await props.params;
   const { model_id } = params;
 
   try {
