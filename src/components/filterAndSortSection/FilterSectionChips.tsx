@@ -43,7 +43,7 @@ const FilterSectionChips = ({ handleFilterModels, filterLabel }: FilterSectionCh
 
   return (
     <div className='flex w-2/4 sm:w-3/4'>
-      <Typography variant='body1' className="flex self-center sm:flex">
+      <Typography variant='body1' className="flex self-center">
         {filterLabel.isStrong ? <strong>{filterLabel.label}</strong> : filterLabel.label}
       </Typography>
 
