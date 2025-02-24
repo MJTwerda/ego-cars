@@ -1,6 +1,7 @@
 import { VehicleModeldetailsI } from "../interfaces/models.interfaces";
 import { stripHtmlTags } from '../../../utils/stringsManagement';
 import ImageTextBlock from './ImageTextBlock';
+import ImageCarousel from './ImageCarousel';
 
 interface ModelDetailsProps {
   vehicleData: VehicleModeldetailsI;
@@ -20,7 +21,8 @@ const ModelDetails = ({ vehicleData }: ModelDetailsProps) => {
         />
       </div>
 
-      <p>Acá va el Carrousel</p>
+      {/* Se concatenan 3 veces para simular un carrusel con mayor visibilidad */}
+      <ImageCarousel modelFeatures={vehicleData.model_features.concat(vehicleData.model_features).concat(vehicleData.model_features)} />
 
       <div className="flex flex-col mt-12">
         {vehicleData.model_highlights.map((highlight, index) => {

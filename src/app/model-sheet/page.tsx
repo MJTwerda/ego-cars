@@ -27,7 +27,6 @@ const ModelSheetPage = async (props: ModelSheetPageProps) => {
 
   const modelDetails = await getVehicleModelById(searchParams?.id);
   if (!modelDetails) return notFound();
-  console.log({ modelDetails });
 
   return (
     <div>
