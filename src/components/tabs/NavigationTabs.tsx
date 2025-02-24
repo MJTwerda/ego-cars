@@ -1,7 +1,7 @@
 'use client'
 import { Tab, Tabs } from "@mui/material";
-import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import { TabColors, NavigationTabI } from './tabs.interfaces';
 
 interface CommonTabsProps {
@@ -10,19 +10,28 @@ interface CommonTabsProps {
   indicatorColor?: TabColors;
 }
 
-const NavigationTabs = ({tabList, textColor = TabColors.PRIMARY, indicatorColor = TabColors.PRIMARY}: CommonTabsProps) => {
+const NavigationTabs = ({ tabList, textColor = TabColors.PRIMARY, indicatorColor = TabColors.PRIMARY }: CommonTabsProps) => {
   const router = useRouter();
-  const [ currentTabPath, setCurrentTabPath ] = useState<string>('');
+  const pathname = usePathname();
+  const [ currentTabPath, setCurrentTabPath ] = useState<string>("");
+
+  useEffect(() => {
+    const matchingTab = tabList.find(tab => `/${tab.path}` === pathname);
+    if (matchingTab) {
+      setCurrentTabPath(matchingTab.path);
+    } else {
+      setCurrentTabPath("/");
+    }
+  }, [pathname, tabList]);
 
   const handleNavigateByTab = (e: React.SyntheticEvent, tabPath: string) => {
-    console.log({ tabPath });
     setCurrentTabPath(tabPath);
     router.push(`/${tabPath}`);
-  }
+  };
 
   return (
     <Tabs 
-      value={currentTabPath} 
+      value={currentTabPath || false} 
       onChange={handleNavigateByTab} 
       textColor={textColor} 
       indicatorColor={indicatorColor}

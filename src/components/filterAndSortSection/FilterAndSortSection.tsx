@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
-import { VehicleModelI } from "../modelCard/models.interfaces";
+import { VehicleModelI } from "../vehicleModels/interfaces/models.interfaces";
 import { SortOptions } from "./sort.interfaces";
-import VehicleCard from '../modelCard/modelList';
+import ModelCard from '../vehicleModels/modelCard/ModelCard';
 import FilterSectionChips from "./FilterSectionChips";
 import CommonMenu from "../menu/Menu";
 import { MenuItemI } from "../menu/menu.interfaces";
@@ -109,11 +109,11 @@ export default function FilterAndSortSection({ modelList }: FilterAndSortProps) 
         />
       </div>
 
-      <ul>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
         {filteredModels.map((model: VehicleModelI) => (
-          <VehicleCard key={model.id} vehicleData={model} />
+          <ModelCard key={model.id} vehicleData={model} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

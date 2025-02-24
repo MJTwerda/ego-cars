@@ -36,7 +36,7 @@ const CommonMenu = (
   return (
     <div>
       <div className="flex justify-center">
-        <Typography variant='body1' className="hidden sm:flex self-center">
+        <Typography variant='body1' className="flex self-center w-3/4">
           {menuLabel.isStrong ? <strong>{menuLabel.label}</strong> : menuLabel.label}
         </Typography>
 

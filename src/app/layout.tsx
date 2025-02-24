@@ -25,6 +25,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <div className="bg-black h-12 mt-12"></div>
       </body>
     </html>
   );
