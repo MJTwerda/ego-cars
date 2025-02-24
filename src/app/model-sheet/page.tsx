@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import ModelDetails from '../../components/vehicleModels/modelDetails/ModelDetails';
 
 interface ModelSheetPageProps {
   searchParams?: Promise<{ id?: string }>
@@ -26,16 +27,12 @@ const ModelSheetPage = async (props: ModelSheetPageProps) => {
 
   const modelDetails = await getVehicleModelById(searchParams?.id);
   if (!modelDetails) return notFound();
+  console.log({ modelDetails });
 
   return (
-    <>
-      <h1>Model Sheet</h1>
-      <p>{modelDetails.title}</p>
-
-      <p>{modelDetails.name}</p>
-
-      <p>{modelDetails.description}</p>
-    </>
+    <div>
+      <ModelDetails vehicleData={modelDetails} />
+    </div>
   );
 };
 

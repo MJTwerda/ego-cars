@@ -1,6 +1,6 @@
 "use client";
 
-import { VehicleModelI } from "./models.interfaces";
+import { VehicleModelI } from "../interfaces/models.interfaces";
 import Image from "next/image";
 import Link from "next/link";
 

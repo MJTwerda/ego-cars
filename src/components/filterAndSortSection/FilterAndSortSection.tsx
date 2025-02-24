@@ -1,8 +1,8 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
-import { VehicleModelI } from "../modelCard/models.interfaces";
+import { VehicleModelI } from "../vehicleModels/interfaces/models.interfaces";
 import { SortOptions } from "./sort.interfaces";
-import ModelCard from '../modelCard/ModelCard';
+import ModelCard from '../vehicleModels/modelCard/ModelCard';
 import FilterSectionChips from "./FilterSectionChips";
 import CommonMenu from "../menu/Menu";
 import { MenuItemI } from "../menu/menu.interfaces";
