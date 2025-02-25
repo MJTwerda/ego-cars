@@ -9,7 +9,7 @@ import { MenuItemI } from "../menu/menu.interfaces";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
-type FilterAndSortProps = { modelList: VehicleModelI[] };
+export interface FilterAndSortProps { modelList: VehicleModelI[] };
 
 export default function FilterAndSortSection({ modelList }: FilterAndSortProps) {
   const [filteredModels, setFilteredModels] = useState<VehicleModelI[]>(modelList);
@@ -109,7 +109,7 @@ export default function FilterAndSortSection({ modelList }: FilterAndSortProps) 
         />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-2 p-4">
         {filteredModels.map((model: VehicleModelI) => (
           <ModelCard key={model.id} vehicleData={model} />
         ))}

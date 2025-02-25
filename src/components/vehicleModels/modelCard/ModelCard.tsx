@@ -4,7 +4,7 @@ import { VehicleModelI } from "../interfaces/models.interfaces";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ModelListProps {
+export interface ModelListProps {
   vehicleData: VehicleModelI;
 }
 
@@ -20,7 +20,7 @@ const ModelCard = ({ vehicleData }: ModelListProps) => {
           <div className="flex space-x-2 text-gray-600">
             <p>{vehicleData.year}</p>
             <p>|</p>
-            <p>{vehicleData.price.toLocaleString("es-AR")}</p>
+            <p>$ {vehicleData.price.toLocaleString("es-AR")}</p>
           </div>
         </div>
 

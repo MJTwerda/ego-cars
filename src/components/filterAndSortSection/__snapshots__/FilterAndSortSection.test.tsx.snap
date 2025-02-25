@@ -1,0 +1,570 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterAndSortSection should render 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <div
+          class="flex justify-between mb-11 pb-2 border-b-2 sm:mb-14"
+        >
+          <div
+            class="flex w-2/4 sm:w-3/4"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 flex self-center css-rizt0-MuiTypography-root"
+            >
+              <strong>
+                Filtrar por
+              </strong>
+            </p>
+            <div
+              class="flex lg:hidden"
+            >
+              <div>
+                <div
+                  class="flex justify-center"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
+                  />
+                  <button
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    data-testid="common_menu_icon_btn"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="ExpandMoreIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+            >
+              <div
+                class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+                data-testid="filter_section_chips_all"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+                >
+                  Todos
+                </span>
+              </div>
+            </div>
+            <div
+              class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+            >
+              <div
+                class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+                data-testid="filter_section_chips_Sedan"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+                >
+                  Autos
+                </span>
+              </div>
+            </div>
+            <div
+              class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+            >
+              <div
+                class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+                data-testid="filter_section_chips_Pickups y Comerciales"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+                >
+                  Pickups y Comerciales
+                </span>
+              </div>
+            </div>
+            <div
+              class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+            >
+              <div
+                class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+                data-testid="filter_section_chips_SUVs"
+                role="button"
+                tabindex="0"
+              >
+                <span
+                  class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+                >
+                  SUVs y Crossovers
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="flex justify-center"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
+              >
+                <strong>
+                  Ordenar por
+                </strong>
+              </p>
+              <button
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                data-testid="common_menu_icon_btn"
+                tabindex="0"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="ExpandMoreIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-2 p-4"
+        >
+          <div
+            class="group hover:scale-105 transition-transform duration-300"
+          >
+            <div
+              class="flex flex-col items-center p-4"
+            >
+              <div
+                class="flex flex-col items-center"
+              >
+                <h1
+                  class="text-2xl font-semibold group-hover:text-[--color-active] min-h-[56px] text-center"
+                >
+                  Model 1
+                </h1>
+                <div
+                  class="flex space-x-2 text-gray-600"
+                >
+                  <p>
+                    2022
+                  </p>
+                  <p>
+                    |
+                  </p>
+                  <p>
+                    $ 
+                    10.000
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center items-center w-full h-[200px]"
+              >
+                <img
+                  alt="Model 1"
+                  class="rounded object-contain"
+                  data-nimg="1"
+                  decoding="async"
+                  height="200"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="300"
+                />
+              </div>
+              <a
+                class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                href="/model-sheet?id=12345"
+              >
+                Ver Modelo
+              </a>
+            </div>
+          </div>
+          <div
+            class="group hover:scale-105 transition-transform duration-300"
+          >
+            <div
+              class="flex flex-col items-center p-4"
+            >
+              <div
+                class="flex flex-col items-center"
+              >
+                <h1
+                  class="text-2xl font-semibold group-hover:text-[--color-active] min-h-[56px] text-center"
+                >
+                  Model 2
+                </h1>
+                <div
+                  class="flex space-x-2 text-gray-600"
+                >
+                  <p>
+                    2021
+                  </p>
+                  <p>
+                    |
+                  </p>
+                  <p>
+                    $ 
+                    8.000
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex justify-center items-center w-full h-[200px]"
+              >
+                <img
+                  alt="Model 2"
+                  class="rounded object-contain"
+                  data-nimg="1"
+                  decoding="async"
+                  height="200"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimg2.jpg&w=640&q=75"
+                  srcset="/_next/image?url=%2Fimg2.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg2.jpg&w=640&q=75 2x"
+                  style="color: transparent;"
+                  width="300"
+                />
+              </div>
+              <a
+                class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                href="/model-sheet?id=67890"
+              >
+                Ver Modelo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <div
+        class="flex justify-between mb-11 pb-2 border-b-2 sm:mb-14"
+      >
+        <div
+          class="flex w-2/4 sm:w-3/4"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 flex self-center css-rizt0-MuiTypography-root"
+          >
+            <strong>
+              Filtrar por
+            </strong>
+          </p>
+          <div
+            class="flex lg:hidden"
+          >
+            <div>
+              <div
+                class="flex justify-center"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
+                />
+                <button
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                  data-testid="common_menu_icon_btn"
+                  tabindex="0"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="ExpandMoreIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+          >
+            <div
+              class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+              data-testid="filter_section_chips_all"
+              role="button"
+              tabindex="0"
+            >
+              <span
+                class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+              >
+                Todos
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+          >
+            <div
+              class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+              data-testid="filter_section_chips_Sedan"
+              role="button"
+              tabindex="0"
+            >
+              <span
+                class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+              >
+                Autos
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+          >
+            <div
+              class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+              data-testid="filter_section_chips_Pickups y Comerciales"
+              role="button"
+              tabindex="0"
+            >
+              <span
+                class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+              >
+                Pickups y Comerciales
+              </span>
+            </div>
+          </div>
+          <div
+            class="flex self-center hidden lg:flex lg:justify-around lg:ml-4"
+          >
+            <div
+              class="MuiButtonBase-root MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-clickable MuiChip-clickableColorDefault MuiChip-filledDefault css-1ykktcv-MuiButtonBase-root-MuiChip-root"
+              data-testid="filter_section_chips_SUVs"
+              role="button"
+              tabindex="0"
+            >
+              <span
+                class="MuiChip-label MuiChip-labelMedium css-1dybbl5-MuiChip-label"
+              >
+                SUVs y Crossovers
+              </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="flex justify-center"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
+            >
+              <strong>
+                Ordenar por
+              </strong>
+            </p>
+            <button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+              data-testid="common_menu_icon_btn"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ExpandMoreIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-2 p-4"
+      >
+        <div
+          class="group hover:scale-105 transition-transform duration-300"
+        >
+          <div
+            class="flex flex-col items-center p-4"
+          >
+            <div
+              class="flex flex-col items-center"
+            >
+              <h1
+                class="text-2xl font-semibold group-hover:text-[--color-active] min-h-[56px] text-center"
+              >
+                Model 1
+              </h1>
+              <div
+                class="flex space-x-2 text-gray-600"
+              >
+                <p>
+                  2022
+                </p>
+                <p>
+                  |
+                </p>
+                <p>
+                  $ 
+                  10.000
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center w-full h-[200px]"
+            >
+              <img
+                alt="Model 1"
+                class="rounded object-contain"
+                data-nimg="1"
+                decoding="async"
+                height="200"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+                srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+                style="color: transparent;"
+                width="300"
+              />
+            </div>
+            <a
+              class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              href="/model-sheet?id=12345"
+            >
+              Ver Modelo
+            </a>
+          </div>
+        </div>
+        <div
+          class="group hover:scale-105 transition-transform duration-300"
+        >
+          <div
+            class="flex flex-col items-center p-4"
+          >
+            <div
+              class="flex flex-col items-center"
+            >
+              <h1
+                class="text-2xl font-semibold group-hover:text-[--color-active] min-h-[56px] text-center"
+              >
+                Model 2
+              </h1>
+              <div
+                class="flex space-x-2 text-gray-600"
+              >
+                <p>
+                  2021
+                </p>
+                <p>
+                  |
+                </p>
+                <p>
+                  $ 
+                  8.000
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center w-full h-[200px]"
+            >
+              <img
+                alt="Model 2"
+                class="rounded object-contain"
+                data-nimg="1"
+                decoding="async"
+                height="200"
+                loading="lazy"
+                src="/_next/image?url=%2Fimg2.jpg&w=640&q=75"
+                srcset="/_next/image?url=%2Fimg2.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg2.jpg&w=640&q=75 2x"
+                style="color: transparent;"
+                width="300"
+              />
+            </div>
+            <a
+              class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              href="/model-sheet?id=67890"
+            >
+              Ver Modelo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

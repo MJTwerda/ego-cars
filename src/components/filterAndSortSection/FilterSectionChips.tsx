@@ -9,7 +9,7 @@ export interface FilterSectionLabelI {
   isStrong?: boolean;
 }
 
-interface FilterSectionChipsProps {
+export interface FilterSectionChipsProps {
   handleFilterModels: (tabValue: string) => void;
   filterLabel: FilterSectionLabelI;
 }
@@ -62,6 +62,7 @@ const FilterSectionChips = ({ handleFilterModels, filterLabel }: FilterSectionCh
           <Chip
             label={tab.label}
             onClick={() => handleFilterModels(tab.value)}
+            data-testid={`filter_section_chips_${tab.value}`}
           />
         </div>
       ))}

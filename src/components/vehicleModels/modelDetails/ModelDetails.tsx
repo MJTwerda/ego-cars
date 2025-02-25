@@ -3,7 +3,7 @@ import { stripHtmlTags } from '../../../utils/stringsManagement';
 import ImageTextBlock from './ImageTextBlock';
 import ImageCarousel from './ImageCarousel';
 
-interface ModelDetailsProps {
+export interface ModelDetailsProps {
   vehicleData: VehicleModeldetailsI;
 }
 
@@ -34,7 +34,6 @@ const ModelDetails = ({ vehicleData }: ModelDetailsProps) => {
                 description: stripHtmlTags(highlight.content)
               }}
             />
-
           )
         })}
       </div>

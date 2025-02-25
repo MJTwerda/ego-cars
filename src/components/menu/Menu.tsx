@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { MenuItemI, MenuLabelI } from './menu.interfaces';
 
-interface CommonMenuProps {
+export interface CommonMenuProps {
   menuLabel: MenuLabelI;
   menuIconOpened?: React.ReactNode;
   menuIconClosed: React.ReactNode;
@@ -40,7 +40,7 @@ const CommonMenu = (
           {menuLabel.isStrong ? <strong>{menuLabel.label}</strong> : menuLabel.label}
         </Typography>
 
-        <IconButton onClick={handleClick}>
+        <IconButton onClick={handleClick} data-testid='common_menu_icon_btn'>
           {open ? menuIconOpened || menuIconClosed : menuIconClosed}
         </IconButton>
 
@@ -48,7 +48,7 @@ const CommonMenu = (
           <div key='close-menu' className={`flex-column justify-items-${justifyItems}`}>
             {showCloseButton && (
               <div>
-                <MenuItem onClick={handleClose}>
+                <MenuItem onClick={handleClose} data-testid='common_menu_close_btn'>
                   <p>Cerrar</p>
                   <ListItemIcon className={`flex justify-${justifyItems}`}>
                     <CloseIcon fontSize="small" />
@@ -60,9 +60,10 @@ const CommonMenu = (
             {menuItems.map((menuItem: MenuItemI) => (
               <div key={menuItem.label}>
                 {menuItem.path ? (
-                  <MenuItem className={`w-56 justify-${justifyItems} mr-9`}>
+                  <MenuItem className={`w-56 justify-${justifyItems} mr-9`} data-testid={`common_menu_item_${menuItem.label}`}>
                     <Link
                       href={menuItem.path || ''}
+                      data-testid={`common_menu_item_link_${menuItem.path}`}
                     >
                       {menuItem.label}
                     </Link>
@@ -71,6 +72,7 @@ const CommonMenu = (
                   <MenuItem
                     className={`w-56 justify-${justifyItems} mr-9`}
                     onClick={menuItem.handleClick && menuItem.handleClick}
+                    data-testid={`common_menu_item_${menuItem.label}`}
                   >
                     {menuItem.label}
                   </MenuItem>

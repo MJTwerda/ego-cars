@@ -82,6 +82,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
         className="absolute left-0 top-8 h-[150px] w-10 sm:w-12 bg-[--color-select] 
         opacity-80 text-black hidden sm:flex items-center justify-center 
         hover:bg-gray-600 transition rounded-none"
+        data-testid='image_carousel_prev_button'
       >
         <ArrowBackIosIcon fontSize="small" />
       </IconButton>
@@ -92,6 +93,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
         className="absolute right-0 top-8 h-[150px] w-10 sm:w-12 bg-[--color-select] 
         opacity-80 text-black hidden sm:flex items-center justify-center 
         hover:bg-gray-600 transition rounded-none"
+        data-testid='image_carousel_next_button'
       >
         <ArrowForwardIosIcon fontSize="small" />
       </IconButton>
@@ -105,6 +107,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
             className={`w-3 h-3 rounded-full transition-all duration-300 ${Math.floor(currentIndex / itemsPerView) === pageIndex ? 'bg-gray-600 scale-110 w-8'
               : 'bg-gray-400'
               }`}
+            data-testid={`image_carousel_indicator_${pageIndex}`}
           />
         ))}
       </div>

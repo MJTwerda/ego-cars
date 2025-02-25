@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import Image from 'next/image';
 import { ImageBlock, TextInfoBlock } from '../interfaces/textBlock.interfaces';
 
-interface ImageTextBlockProps {
+export interface ImageTextBlockProps {
   image: ImageBlock;
   textInfo: TextInfoBlock;
 };
