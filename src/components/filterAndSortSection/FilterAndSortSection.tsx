@@ -109,7 +109,7 @@ export default function FilterAndSortSection({ modelList }: FilterAndSortProps) 
         />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-2 p-4">
         {filteredModels.map((model: VehicleModelI) => (
           <ModelCard key={model.id} vehicleData={model} />
         ))}
