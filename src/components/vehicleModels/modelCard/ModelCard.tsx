@@ -10,9 +10,7 @@ interface ModelListProps {
 
 const ModelCard = ({ vehicleData }: ModelListProps) => {
   return (
-    <Link href={`/model-sheet?id=${vehicleData.id}`}
-      className="group hover:scale-105 transition-transform"
-    >
+    <div className="group hover:scale-105 transition-transform duration-300">
       <div className="flex flex-col items-center p-4 rounded-lg">
         <div className="flex flex-col items-center">
           <h1 className="text-2xl font-semibold group-hover:text-[--color-active]">
@@ -30,10 +28,18 @@ const ModelCard = ({ vehicleData }: ModelListProps) => {
           alt={vehicleData.name}
           width={300}
           height={200}
-          className="mt-2 rounded"
+          className="my-2 rounded object-cover"
         />
+
+        <Link
+          href={`/model-sheet?id=${vehicleData.id}`}
+          className="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          Ver Modelo
+        </Link>
       </div>
-    </Link>
+
+    </div>
   );
 };
 
