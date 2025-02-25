@@ -2,6 +2,7 @@ export interface ImageBlock {
   src: string;
   alt: string;
   position: 'right' | 'left';
+  width?: string;
 };
 
 export interface TextInfoBlock {

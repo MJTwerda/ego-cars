@@ -10,21 +10,19 @@ export interface ModelDetailsProps {
 const ModelDetails = ({ vehicleData }: ModelDetailsProps) => {
   return (
     <div className="flex flex-col">
-      <div className="mb-12">
-        <ImageTextBlock
-          image={{ src: vehicleData.photo, alt: vehicleData.name, position: 'left' }}
-          textInfo={{
-            model: vehicleData.name,
-            title: { text: vehicleData.title, variant: 'h4' },
-            description: vehicleData.description
-          }}
-        />
-      </div>
+      <ImageTextBlock
+        image={{ src: vehicleData.photo, alt: vehicleData.name, position: 'left', width: '60' }}
+        textInfo={{
+          model: vehicleData.name,
+          title: { text: vehicleData.title, variant: 'h3' },
+          description: vehicleData.description
+        }}
+      />
 
       {/* Se concatenan 3 veces para simular un carrusel con mayor visibilidad */}
       <ImageCarousel modelFeatures={vehicleData.model_features.concat(vehicleData.model_features).concat(vehicleData.model_features)} />
 
-      <div className="flex flex-col mt-12">
+      <div className="flex flex-col mt-4">
         {vehicleData.model_highlights.map((highlight, index) => {
           const indexIsPar = index % 2 === 0
           return (

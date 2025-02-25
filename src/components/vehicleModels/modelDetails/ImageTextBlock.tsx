@@ -11,29 +11,18 @@ export interface ImageTextBlockProps {
 const ImageTextBlock = ({ image, textInfo }: ImageTextBlockProps) => {
 
   return (
-    <div className={`flex flex-col lg:flex-row ${image.position === 'right' ? 'lg:flex-row-reverse' : ''} align-center mx-4 mt-11 sm:mx-32 sm:mt-14`}>
+    <div className={`flex flex-col lg:flex-row ${image.position === 'right' ? 'lg:flex-row-reverse' : ''} align-center mx-4 mt-11 sm:mx-32`}>
       <Image
         src={image.src}
         alt={image.alt}
         width={300}
         height={300}
-        className={`rounded lg:w-1/2 ${image.position === 'right' ? 'lg:ml-12' : 'lg:mr-12'}`}
+        className={`rounded ${image.width ? `lg:w-[${image.width}%]` : 'lg:w-1/2'} ${image.position === 'right' ? 'lg:ml-12' : 'lg:mr-12'}`}
       />
 
-      <div className="flex flex-col self-center lg:w-1/2">
-        {textInfo.model && (
-          <Typography variant="h6">
-            {textInfo.model}
-          </Typography>
-        )}
-
-        <Typography
-          variant={textInfo.title.variant}
-          className="mb-4"
-        >
-          {textInfo.title.text}
-        </Typography>
-        
+      <div className="flex flex-col self-center lg:w-[40%]">
+        {textInfo.model &&<Typography variant="h5">{textInfo.model}</Typography>}
+        <Typography variant={textInfo.title.variant} className="mb-4">{textInfo.title.text}</Typography>
         <Typography variant="body2">
           {`${stripHtmlTags(textInfo.description)} Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`}
         </Typography>

@@ -22,7 +22,7 @@ export default function ErrorPage({ error, reset }: { error: Error; reset: () =>
       <p className="text-gray-600 mt-2">Por favor, vuelve a intentarlo en unos instantes.</p>
       <Button
         variant="outlined"
-        color="primary"
+        color="secondary"
         onClick={() => reset()}
         className="mt-6"
       >
