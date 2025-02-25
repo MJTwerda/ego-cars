@@ -1,0 +1,621 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModelDetails should render 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-col"
+      >
+        <div
+          class="mb-12"
+        >
+          <div
+            class="flex flex-col lg:flex-row  align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+          >
+            <img
+              alt="Model 1"
+              class="rounded lg:w-1/2 lg:mr-12"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+              srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+              style="color: transparent;"
+              width="300"
+            />
+            <div
+              class="flex flex-col self-center lg:w-1/2"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+              >
+                Model 1
+              </h6>
+              <h4
+                class="MuiTypography-root MuiTypography-h4 mb-4 css-f84ov1-MuiTypography-root"
+              >
+                Title 1
+              </h4>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Description 1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative w-full mx-auto mt-10 overflow-hidden"
+        >
+          <div
+            class="flex transition-transform duration-700 ease-in-out"
+            style="transform: translateX(-0%);"
+          />
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute left-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="image_carousel_prev_button"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+              data-testid="ArrowBackIosIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+              />
+            </svg>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute right-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="image_carousel_next_button"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2"
+          />
+        </div>
+        <div
+          class="flex flex-col mt-12"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-col"
+    >
+      <div
+        class="mb-12"
+      >
+        <div
+          class="flex flex-col lg:flex-row  align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+        >
+          <img
+            alt="Model 1"
+            class="rounded lg:w-1/2 lg:mr-12"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+          <div
+            class="flex flex-col self-center lg:w-1/2"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+            >
+              Model 1
+            </h6>
+            <h4
+              class="MuiTypography-root MuiTypography-h4 mb-4 css-f84ov1-MuiTypography-root"
+            >
+              Title 1
+            </h4>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Description 1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative w-full mx-auto mt-10 overflow-hidden"
+      >
+        <div
+          class="flex transition-transform duration-700 ease-in-out"
+          style="transform: translateX(-0%);"
+        />
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute left-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="image_carousel_prev_button"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+            data-testid="ArrowBackIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+            />
+          </svg>
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute right-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="image_carousel_next_button"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </button>
+        <div
+          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2"
+        />
+      </div>
+      <div
+        class="flex flex-col mt-12"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`ModelDetails should render with highlights info 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-col"
+      >
+        <div
+          class="mb-12"
+        >
+          <div
+            class="flex flex-col lg:flex-row  align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+          >
+            <img
+              alt="Model 1"
+              class="rounded lg:w-1/2 lg:mr-12"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+              srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+              style="color: transparent;"
+              width="300"
+            />
+            <div
+              class="flex flex-col self-center lg:w-1/2"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+              >
+                Model 1
+              </h6>
+              <h4
+                class="MuiTypography-root MuiTypography-h4 mb-4 css-f84ov1-MuiTypography-root"
+              >
+                Title 1
+              </h4>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Description 1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="relative w-full mx-auto mt-10 overflow-hidden"
+        >
+          <div
+            class="flex transition-transform duration-700 ease-in-out"
+            style="transform: translateX(-0%);"
+          />
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute left-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="image_carousel_prev_button"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+              data-testid="ArrowBackIosIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+              />
+            </svg>
+          </button>
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute right-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="image_carousel_next_button"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+              data-testid="ArrowForwardIosIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+              />
+            </svg>
+          </button>
+          <div
+            class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2"
+          />
+        </div>
+        <div
+          class="flex flex-col mt-12"
+        >
+          <div
+            class="flex flex-col lg:flex-row lg:flex-row-reverse align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+          >
+            <img
+              alt="Highlight 1"
+              class="rounded lg:w-1/2 lg:ml-12"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+              srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+              style="color: transparent;"
+              width="300"
+            />
+            <div
+              class="flex flex-col self-center lg:w-1/2"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 mb-4 css-1miy0lu-MuiTypography-root"
+              >
+                Highlight 1
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Content 1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col lg:flex-row  align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+          >
+            <img
+              alt="Highlight 2"
+              class="rounded lg:w-1/2 lg:mr-12"
+              data-nimg="1"
+              decoding="async"
+              height="300"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg2.jpg&w=640&q=75"
+              srcset="/_next/image?url=%2Fimg2.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg2.jpg&w=640&q=75 2x"
+              style="color: transparent;"
+              width="300"
+            />
+            <div
+              class="flex flex-col self-center lg:w-1/2"
+            >
+              <h6
+                class="MuiTypography-root MuiTypography-h6 mb-4 css-1miy0lu-MuiTypography-root"
+              >
+                Highlight 2
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Content 2 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-col"
+    >
+      <div
+        class="mb-12"
+      >
+        <div
+          class="flex flex-col lg:flex-row  align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+        >
+          <img
+            alt="Model 1"
+            class="rounded lg:w-1/2 lg:mr-12"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+          <div
+            class="flex flex-col self-center lg:w-1/2"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+            >
+              Model 1
+            </h6>
+            <h4
+              class="MuiTypography-root MuiTypography-h4 mb-4 css-f84ov1-MuiTypography-root"
+            >
+              Title 1
+            </h4>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Description 1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative w-full mx-auto mt-10 overflow-hidden"
+      >
+        <div
+          class="flex transition-transform duration-700 ease-in-out"
+          style="transform: translateX(-0%);"
+        />
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute left-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="image_carousel_prev_button"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+            data-testid="ArrowBackIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+            />
+          </svg>
+        </button>
+        <button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium absolute right-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+          data-testid="image_carousel_next_button"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+            data-testid="ArrowForwardIosIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"
+            />
+          </svg>
+        </button>
+        <div
+          class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2"
+        />
+      </div>
+      <div
+        class="flex flex-col mt-12"
+      >
+        <div
+          class="flex flex-col lg:flex-row lg:flex-row-reverse align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+        >
+          <img
+            alt="Highlight 1"
+            class="rounded lg:w-1/2 lg:ml-12"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+          <div
+            class="flex flex-col self-center lg:w-1/2"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 mb-4 css-1miy0lu-MuiTypography-root"
+            >
+              Highlight 1
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Content 1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row  align-center mx-4 mt-11 sm:mx-32 sm:mt-14"
+        >
+          <img
+            alt="Highlight 2"
+            class="rounded lg:w-1/2 lg:mr-12"
+            data-nimg="1"
+            decoding="async"
+            height="300"
+            loading="lazy"
+            src="/_next/image?url=%2Fimg2.jpg&w=640&q=75"
+            srcset="/_next/image?url=%2Fimg2.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg2.jpg&w=640&q=75 2x"
+            style="color: transparent;"
+            width="300"
+          />
+          <div
+            class="flex flex-col self-center lg:w-1/2"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 mb-4 css-1miy0lu-MuiTypography-root"
+            >
+              Highlight 2
+            </h6>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+            >
+              Content 2 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
