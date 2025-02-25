@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ModelFeaturesI } from '../interfaces/models.interfaces';
-import { IconButton } from '@mui/material';
+import { Button, IconButton } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Image from 'next/image';
@@ -73,6 +73,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
       <IconButton
         onClick={prevSlide}
         className="absolute left-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md"
+        data-testid='image_carousel_prev_button'
       >
         <ArrowBackIosIcon fontSize="small" />
       </IconButton>
@@ -81,6 +82,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
       <IconButton
         onClick={nextSlide}
         className="absolute right-1 top-1/3 -translate-y-1/2 w-12 h-12 bg-gray-400 opacity-80 text-black hidden sm:flex items-center justify-center hover:bg-gray-600 transition rounded-md"
+        data-testid='image_carousel_next_button'
       >
         <ArrowForwardIosIcon fontSize="small" />
       </IconButton>
@@ -88,12 +90,13 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
       {/* Puntos indicadores */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {Array.from({ length: totalPages }).map((_, pageIndex) => (
-          <button
+          <Button
             key={pageIndex}
             onClick={() => goToPage(pageIndex)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               Math.floor(currentIndex / itemsPerView) === pageIndex ? 'bg-gray-600 scale-110 w-8' : 'bg-gray-400'
             }`}
+            data-testid={`image_carousel_indicator_${pageIndex}`}
           />
         ))}
       </div>
