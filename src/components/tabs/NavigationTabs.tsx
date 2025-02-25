@@ -43,6 +43,7 @@ const NavigationTabs = ({ tabList, textColor = TabColors.PRIMARY, indicatorColor
           id={`navigation-tab-${tab.path}`}
           value={tab.path} 
           label={tab.label} 
+          data-testid={`navigation-tab-${tab.path}`}
         />
       ))}
     </Tabs>
