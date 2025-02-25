@@ -10,7 +10,7 @@ exports[`ModelCard should render 1`] = `
         href="/model-sheet?id=12345"
       >
         <div
-          class="flex flex-col items-center border p-4 rounded-lg shadow-lg"
+          class="flex flex-col h-64 items-center border p-4 rounded-lg shadow-lg"
         >
           <h1
             class="text-2xl font-semibold"
@@ -51,7 +51,7 @@ exports[`ModelCard should render 1`] = `
       href="/model-sheet?id=12345"
     >
       <div
-        class="flex flex-col items-center border p-4 rounded-lg shadow-lg"
+        class="flex flex-col h-64 items-center border p-4 rounded-lg shadow-lg"
       >
         <h1
           class="text-2xl font-semibold"

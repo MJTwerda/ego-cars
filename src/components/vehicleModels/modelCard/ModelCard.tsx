@@ -11,7 +11,7 @@ export interface ModelListProps {
 const ModelCard = ({ vehicleData }: ModelListProps) => {
   return (
     <Link href={`/model-sheet?id=${vehicleData.id}`} className="hover:scale-105 transition-transform">
-      <div className="flex flex-col items-center border p-4 rounded-lg shadow-lg">
+      <div className="flex flex-col h-64 items-center border p-4 rounded-lg shadow-lg">
         <h1 className="text-2xl font-semibold">{vehicleData.name}</h1>
 
         <div className="flex space-x-2 text-gray-600">
