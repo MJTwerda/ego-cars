@@ -10,7 +10,7 @@ interface CommonTabsProps {
   indicatorColor?: TabColors;
 }
 
-const NavigationTabs = ({ tabList, textColor = TabColors.PRIMARY, indicatorColor = TabColors.PRIMARY }: CommonTabsProps) => {
+const NavigationTabs = ({ tabList, textColor = TabColors.SECONDARY, indicatorColor = TabColors.SECONDARY }: CommonTabsProps) => {
   const router = useRouter();
   const pathname = usePathname();
   const [ currentTabPath, setCurrentTabPath ] = useState<string>("");

@@ -16,7 +16,7 @@ export default function NotFoundPage() {
       <p className="text-gray-600 mt-2">El destino que buscas no existe o se lo tragó la tierra.</p>
       <Button
         variant="outlined"
-        color="primary"
+        color="secondary"
         className="mt-6"
         component={Link}
         href="/"
