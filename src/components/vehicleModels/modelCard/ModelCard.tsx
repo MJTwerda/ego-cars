@@ -16,7 +16,7 @@ const ModelCard = ({ vehicleData }: ModelListProps) => {
 
         <div className="flex space-x-2 text-gray-600">
           <p>{vehicleData.year} |</p>
-          <p>{vehicleData.price.toLocaleString("es-AR")}</p>
+          <p>$ {vehicleData.price.toLocaleString("es-AR")}</p>
         </div>
 
         <Image

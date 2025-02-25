@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import Image from 'next/image';
 import { ImageBlock, TextInfoBlock } from '../interfaces/textBlock.interfaces';
 
-interface ImageTextBlockProps {
+export interface ImageTextBlockProps {
   image: ImageBlock;
   textInfo: TextInfoBlock;
 };
@@ -21,8 +21,19 @@ const ImageTextBlock = ({ image, textInfo }: ImageTextBlockProps) => {
       />
 
       <div className="flex flex-col self-center lg:w-1/2">
-        {textInfo.model &&<Typography variant="h6">{textInfo.model}</Typography>}
-        <Typography variant={textInfo.title.variant} className="mb-4">{textInfo.title.text}</Typography>
+        {textInfo.model && (
+          <Typography variant="h6">
+            {textInfo.model}
+          </Typography>
+        )}
+
+        <Typography
+          variant={textInfo.title.variant}
+          className="mb-4"
+        >
+          {textInfo.title.text}
+        </Typography>
+        
         <Typography variant="body2">
           {`${stripHtmlTags(textInfo.description)} Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`}
         </Typography>
