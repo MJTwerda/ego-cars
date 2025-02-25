@@ -9,7 +9,7 @@ import { MenuItemI } from "../menu/menu.interfaces";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
-type FilterAndSortProps = { modelList: VehicleModelI[] };
+export interface FilterAndSortProps { modelList: VehicleModelI[] };
 
 export default function FilterAndSortSection({ modelList }: FilterAndSortProps) {
   const [filteredModels, setFilteredModels] = useState<VehicleModelI[]>(modelList);
