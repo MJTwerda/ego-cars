@@ -4,7 +4,7 @@ import { VehicleModelI } from "../interfaces/models.interfaces";
 import Image from "next/image";
 import Link from "next/link";
 
-interface ModelListProps {
+export interface ModelListProps {
   vehicleData: VehicleModelI;
 }
 
