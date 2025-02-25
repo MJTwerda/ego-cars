@@ -10,13 +10,19 @@ interface ModelListProps {
 
 const ModelCard = ({ vehicleData }: ModelListProps) => {
   return (
-    <Link href={`/model-sheet?id=${vehicleData.id}`} className="hover:scale-105 transition-transform">
-      <div className="flex flex-col items-center border p-4 rounded-lg shadow-lg">
-        <h1 className="text-2xl font-semibold">{vehicleData.name}</h1>
+    <Link href={`/model-sheet?id=${vehicleData.id}`}
+      className="group hover:scale-105 transition-transform"
+    >
+      <div className="flex flex-col items-center p-4 rounded-lg">
+        <div className="flex flex-col items-center">
+          <h1 className="text-2xl font-semibold group-hover:text-[--color-active]">
+            {vehicleData.name}
+          </h1>
 
-        <div className="flex space-x-2 text-gray-600">
-          <p>{vehicleData.year} |</p>
-          <p>{vehicleData.price.toLocaleString("es-AR")}</p>
+          <div className="flex space-x-2 text-gray-600">
+            <p>{vehicleData.year} |</p>
+            <p>{vehicleData.price.toLocaleString("es-AR")}</p>
+          </div>
         </div>
 
         <Image
