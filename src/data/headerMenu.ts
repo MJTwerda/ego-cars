@@ -3,7 +3,7 @@ import { MenuItemI } from "@/components/menu/menu.interfaces";
 export const menuItems: MenuItemI[] = [
   {
     label: 'Modelos',
-    path: '',
+    path: '/',
   },
   {
     label: 'Servicios y Accesorios',

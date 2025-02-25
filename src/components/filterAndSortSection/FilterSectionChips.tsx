@@ -20,24 +20,25 @@ const FilterSectionChips = ({ handleFilterModels, filterLabel }: FilterSectionCh
       label: "Todos",
       value: "all",
       handleClick: () => handleFilterModels("all"),
+      bottomDivider: true
     },
     {
       label: "Autos",
       value: "Sedan",
       handleClick: () => handleFilterModels("Sedan"),
+      bottomDivider: true
 
     },
     {
       label: "Pickups y Comerciales",
       value: "Pickups y Comerciales",
       handleClick: () => handleFilterModels("Pickups y Comerciales"),
-
+      bottomDivider: true
     },
     {
       label: "SUVs y Crossovers",
       value: "SUVs",
       handleClick: () => handleFilterModels("SUVs"),
-
     },
   ];
 

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ModelFeaturesI } from '../interfaces/models.interfaces';
-import { Button, IconButton, Typography } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Image from 'next/image';
@@ -101,7 +101,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
       {/* Puntos indicadores */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {Array.from({ length: totalPages }).map((_, pageIndex) => (
-          <Button
+          <button
             key={pageIndex}
             onClick={() => goToPage(pageIndex)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${Math.floor(currentIndex / itemsPerView) === pageIndex ? 'bg-gray-600 scale-110 w-8'

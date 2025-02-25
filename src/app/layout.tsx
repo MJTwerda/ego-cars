@@ -27,7 +27,7 @@ export default function RootLayout({
         <ThemeProviderWrapper>
           <Header />
           <main className="flex-grow">{children}</main>
-          <div className="bg-black h-12"></div>
+          <div className="bg-black h-12 mt-12"></div>
         </ThemeProviderWrapper>
       </body>
     </html>
