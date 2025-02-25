@@ -16,7 +16,7 @@ export default function NotFoundPage() {
       <p className="text-gray-600 mt-2">Elegí un modelo de vehículo para ver su detalle, sino el vehículo sos vos</p>
       <Button
         variant="outlined"
-        color="primary"
+        color="secondary"
         className="mt-6"
         component={Link}
         href="/"
