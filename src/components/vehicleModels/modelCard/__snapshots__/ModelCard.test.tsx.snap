@@ -5,15 +5,73 @@ exports[`ModelCard should render 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <a
-        class="hover:scale-105 transition-transform"
-        href="/model-sheet?id=12345"
+      <div
+        class="group hover:scale-105 transition-transform duration-300"
       >
         <div
-          class="flex flex-col h-64 items-center border p-4 rounded-lg shadow-lg"
+          class="flex flex-col items-center p-4"
+        >
+          <div
+            class="flex flex-col items-center"
+          >
+            <h1
+              class="text-2xl font-semibold group-hover:text-[--color-active] min-h-[56px] text-center"
+            >
+              Model 1
+            </h1>
+            <div
+              class="flex space-x-2 text-gray-600"
+            >
+              <p>
+                2022
+              </p>
+              <p>
+                |
+              </p>
+              <p>
+                $ 
+                10.000
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center w-full h-[200px]"
+          >
+            <img
+              alt="Model 1"
+              class="rounded object-contain"
+              data-nimg="1"
+              decoding="async"
+              height="200"
+              loading="lazy"
+              src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
+              srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
+              style="color: transparent;"
+              width="300"
+            />
+          </div>
+          <a
+            class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            href="/model-sheet?id=12345"
+          >
+            Ver Modelo
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="group hover:scale-105 transition-transform duration-300"
+    >
+      <div
+        class="flex flex-col items-center p-4"
+      >
+        <div
+          class="flex flex-col items-center"
         >
           <h1
-            class="text-2xl font-semibold"
+            class="text-2xl font-semibold group-hover:text-[--color-active] min-h-[56px] text-center"
           >
             Model 1
           </h1>
@@ -22,16 +80,22 @@ exports[`ModelCard should render 1`] = `
           >
             <p>
               2022
-               |
+            </p>
+            <p>
+              |
             </p>
             <p>
               $ 
               10.000
             </p>
           </div>
+        </div>
+        <div
+          class="flex justify-center items-center w-full h-[200px]"
+        >
           <img
             alt="Model 1"
-            class="mt-2 rounded"
+            class="rounded object-contain"
             data-nimg="1"
             decoding="async"
             height="200"
@@ -42,48 +106,14 @@ exports[`ModelCard should render 1`] = `
             width="300"
           />
         </div>
-      </a>
-    </div>
-  </body>,
-  "container": <div>
-    <a
-      class="hover:scale-105 transition-transform"
-      href="/model-sheet?id=12345"
-    >
-      <div
-        class="flex flex-col h-64 items-center border p-4 rounded-lg shadow-lg"
-      >
-        <h1
-          class="text-2xl font-semibold"
+        <a
+          class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          href="/model-sheet?id=12345"
         >
-          Model 1
-        </h1>
-        <div
-          class="flex space-x-2 text-gray-600"
-        >
-          <p>
-            2022
-             |
-          </p>
-          <p>
-            $ 
-            10.000
-          </p>
-        </div>
-        <img
-          alt="Model 1"
-          class="mt-2 rounded"
-          data-nimg="1"
-          decoding="async"
-          height="200"
-          loading="lazy"
-          src="/_next/image?url=%2Fimg1.jpg&w=640&q=75"
-          srcset="/_next/image?url=%2Fimg1.jpg&w=384&q=75 1x, /_next/image?url=%2Fimg1.jpg&w=640&q=75 2x"
-          style="color: transparent;"
-          width="300"
-        />
+          Ver Modelo
+        </a>
       </div>
-    </a>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

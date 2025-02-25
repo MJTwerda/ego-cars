@@ -157,7 +157,7 @@ exports[`NavigationTabs should render tabs correctly 1`] = `
           >
             <a
               aria-selected="true"
-              class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+              class="MuiButtonBase-root MuiTab-root MuiTab-textColorSecondary Mui-selected css-16iolqj-MuiButtonBase-root-MuiTab-root"
               data-testid="navigation-tab-/"
               id="navigation-tab-/"
               role="tab"
@@ -167,7 +167,7 @@ exports[`NavigationTabs should render tabs correctly 1`] = `
             </a>
             <a
               aria-selected="false"
-              class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+              class="MuiButtonBase-root MuiTab-root MuiTab-textColorSecondary css-16iolqj-MuiButtonBase-root-MuiTab-root"
               data-testid="navigation-tab-model-sheet"
               id="navigation-tab-model-sheet"
               role="tab"
@@ -177,7 +177,7 @@ exports[`NavigationTabs should render tabs correctly 1`] = `
             </a>
           </div>
           <span
-            class="MuiTabs-indicator css-1qltlow-MuiTabs-indicator"
+            class="MuiTabs-indicator css-ehhs8s-MuiTabs-indicator"
             style="left: 0px; width: 0px;"
           />
         </div>
@@ -198,7 +198,7 @@ exports[`NavigationTabs should render tabs correctly 1`] = `
         >
           <a
             aria-selected="true"
-            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+            class="MuiButtonBase-root MuiTab-root MuiTab-textColorSecondary Mui-selected css-16iolqj-MuiButtonBase-root-MuiTab-root"
             data-testid="navigation-tab-/"
             id="navigation-tab-/"
             role="tab"
@@ -208,7 +208,7 @@ exports[`NavigationTabs should render tabs correctly 1`] = `
           </a>
           <a
             aria-selected="false"
-            class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1usuzwp-MuiButtonBase-root-MuiTab-root"
+            class="MuiButtonBase-root MuiTab-root MuiTab-textColorSecondary css-16iolqj-MuiButtonBase-root-MuiTab-root"
             data-testid="navigation-tab-model-sheet"
             id="navigation-tab-model-sheet"
             role="tab"
@@ -218,7 +218,7 @@ exports[`NavigationTabs should render tabs correctly 1`] = `
           </a>
         </div>
         <span
-          class="MuiTabs-indicator css-1qltlow-MuiTabs-indicator"
+          class="MuiTabs-indicator css-ehhs8s-MuiTabs-indicator"
           style="left: 0px; width: 0px;"
         />
       </div>
