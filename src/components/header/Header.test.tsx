@@ -1,4 +1,4 @@
-import { act, fireEvent, render, RenderResult, waitFor } from "@testing-library/react";
+import { act, render, RenderResult, waitFor } from "@testing-library/react";
 import { useRouter } from "next/navigation";
 import Header from "./Header";
 

@@ -14,7 +14,7 @@ export async function GET() {
     return NextResponse.json(data);
   } catch (error) {
     return NextResponse.json(
-      { error: "Error fetching vehicle models" },
+      { error, message: "Error fetching vehicle models" },
       { status: 500 }
     );
   }

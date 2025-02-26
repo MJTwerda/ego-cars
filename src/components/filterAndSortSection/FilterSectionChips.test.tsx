@@ -1,9 +1,6 @@
 import { render, screen, fireEvent, RenderResult, act, waitFor } from '@testing-library/react';
 import FilterSectionChips from './FilterSectionChips';
 import '@testing-library/jest-dom';
-import { Chip } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { FilterSectionChipsProps } from './FilterSectionChips';
 
 const mockLabel = 'Filtrar por';
