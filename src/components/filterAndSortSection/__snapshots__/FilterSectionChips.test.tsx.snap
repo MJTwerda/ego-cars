@@ -18,32 +18,30 @@ exports[`FilterSectionChips should render the filter section label correctly 1`]
         <div
           class="flex lg:hidden"
         >
-          <div>
-            <div
-              class="flex justify-center"
+          <div
+            class="flex"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 hidden sm:flex self-center w-3/4 css-rizt0-MuiTypography-root"
+            />
+            <button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+              data-testid="common_menu_icon_btn"
+              tabindex="0"
+              type="button"
             >
-              <p
-                class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
-              />
-              <button
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
-                data-testid="common_menu_icon_btn"
-                tabindex="0"
-                type="button"
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ExpandMoreIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="ExpandMoreIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                  />
-                </svg>
-              </button>
-            </div>
+                <path
+                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
         <div
@@ -127,32 +125,30 @@ exports[`FilterSectionChips should render the filter section label correctly 1`]
       <div
         class="flex lg:hidden"
       >
-        <div>
-          <div
-            class="flex justify-center"
+        <div
+          class="flex"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 hidden sm:flex self-center w-3/4 css-rizt0-MuiTypography-root"
+          />
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="common_menu_icon_btn"
+            tabindex="0"
+            type="button"
           >
-            <p
-              class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
-            />
-            <button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
-              data-testid="common_menu_icon_btn"
-              tabindex="0"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="ExpandMoreIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                data-testid="ExpandMoreIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div
@@ -291,32 +287,30 @@ exports[`FilterSectionChips should render the filter section label correctly 2`]
         <div
           class="flex lg:hidden"
         >
-          <div>
-            <div
-              class="flex justify-center"
+          <div
+            class="flex"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 hidden sm:flex self-center w-3/4 css-rizt0-MuiTypography-root"
+            />
+            <button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+              data-testid="common_menu_icon_btn"
+              tabindex="0"
+              type="button"
             >
-              <p
-                class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
-              />
-              <button
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
-                data-testid="common_menu_icon_btn"
-                tabindex="0"
-                type="button"
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ExpandMoreIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
               >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                  data-testid="ExpandMoreIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                  />
-                </svg>
-              </button>
-            </div>
+                <path
+                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </button>
           </div>
         </div>
         <div
@@ -398,32 +392,30 @@ exports[`FilterSectionChips should render the filter section label correctly 2`]
       <div
         class="flex lg:hidden"
       >
-        <div>
-          <div
-            class="flex justify-center"
+        <div
+          class="flex"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 hidden sm:flex self-center w-3/4 css-rizt0-MuiTypography-root"
+          />
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+            data-testid="common_menu_icon_btn"
+            tabindex="0"
+            type="button"
           >
-            <p
-              class="MuiTypography-root MuiTypography-body1 flex self-center w-3/4 css-rizt0-MuiTypography-root"
-            />
-            <button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
-              data-testid="common_menu_icon_btn"
-              tabindex="0"
-              type="button"
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="ExpandMoreIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
             >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                data-testid="ExpandMoreIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </button>
         </div>
       </div>
       <div

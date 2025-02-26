@@ -21,7 +21,7 @@ const CommonMenu = (
     menuIconClosed,
     menuItems,
     showCloseButton,
-    xUbication = 'start'
+    xUbication
   }: CommonMenuProps) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -71,7 +71,7 @@ const CommonMenu = (
                   sx={{ width: '224px', display: 'flex', flexDirection: 'column', alignItems: xUbication, justifyContent: 'center' }}
                   data-testid={`common_menu_item_${menuItem.label}`}>
                   <Link
-                    href={menuItem.path || ''}
+                    href={menuItem.path}
                     data-testid={`common_menu_item_link_${menuItem.path}`}
                   >
                     {menuItem.label}
