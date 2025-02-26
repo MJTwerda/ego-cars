@@ -1,4 +1,4 @@
-import { render, screen, fireEvent, act, waitFor, RenderResult } from "@testing-library/react";
+import { render, fireEvent, act, waitFor, RenderResult } from "@testing-library/react";
 import NavigationTabs from "./NavigationTabs";
 import { TabColors, NavigationTabI } from "./tabs.interfaces";
 import { usePathname, useRouter } from "next/navigation";
@@ -67,7 +67,7 @@ describe("NavigationTabs", () => {
     });
 
     await waitFor(() => {
-      const activeTab = screen.getByRole("tab", { name: "Model Sheet" });
+      const activeTab = component.getByRole("tab", { name: "Model Sheet" });
       expect(activeTab).toHaveAttribute("aria-selected", "true");
     });
 
@@ -82,7 +82,7 @@ describe("NavigationTabs", () => {
     });
 
     await waitFor(() => {
-      const modelSheetTab = screen.getByRole("tab", { name: "Model Sheet" });
+      const modelSheetTab = component.getByRole("tab", { name: "Model Sheet" });
       fireEvent.click(modelSheetTab);
   
       expect(mockPush).toHaveBeenCalledWith("/model-sheet");
@@ -98,7 +98,7 @@ describe("NavigationTabs", () => {
     });
 
     await waitFor(() => {
-      const defaultTab = screen.getByRole("tab", { name: "Model" });
+      const defaultTab = component.getByRole("tab", { name: "Model" });
       expect(defaultTab).toBeInTheDocument();
     });
 
