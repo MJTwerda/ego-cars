@@ -4,7 +4,6 @@ import { VehicleModelI } from "../interfaces/models.interfaces";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Button } from "@mui/material";
 
 export interface ModelListProps {
   vehicleData: VehicleModelI;
@@ -41,12 +40,12 @@ const ModelCard = ({ vehicleData }: ModelListProps) => {
           />
         </div>
 
-        <Button
+        <button
           onClick={handleNavigate}
           className="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         >
           Ver Modelo
-        </Button>
+        </button>
       </div>
     </Link>
   );
