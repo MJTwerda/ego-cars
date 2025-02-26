@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { ModelFeaturesI } from '../interfaces/models.interfaces';
-import { IconButton, Typography } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Image from 'next/image';
@@ -63,12 +62,12 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
                   className="w-full h-[150px] object-cover rounded"
                 />
                 <div className='flex flex-col justify-between h-[90px]'>
-                  <Typography variant='h3' className="mt-4 text-lg font-semibold">
+                  <h3 className="mt-4 text-lg font-semibold">
                     {item.name}
-                  </Typography>
-                  <Typography variant='body1' className="text-gray-600 text-sm">
+                  </h3>
+                  <p className="text-gray-600 text-sm">
                     {item.description}
-                  </Typography>
+                  </p>
                 </div>
               </div>
             </div>
@@ -77,7 +76,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
       </div>
 
       {/* Botón Anterior */}
-      <IconButton
+      <button
         onClick={prevSlide}
         className="absolute left-0 top-8 h-[150px] w-10 sm:w-12 bg-[--color-select] 
         opacity-80 text-black hidden sm:flex items-center justify-center 
@@ -85,10 +84,10 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
         data-testid='image_carousel_prev_button'
       >
         <ArrowBackIosIcon fontSize="small" />
-      </IconButton>
+      </button>
 
       {/* Botón Siguiente */}
-      <IconButton
+      <button
         onClick={nextSlide}
         className="absolute right-0 top-8 h-[150px] w-10 sm:w-12 bg-[--color-select] 
         opacity-80 text-black hidden sm:flex items-center justify-center 
@@ -96,7 +95,7 @@ const ImageCarousel = ({ modelFeatures }: ImageCarouselI) => {
         data-testid='image_carousel_next_button'
       >
         <ArrowForwardIosIcon fontSize="small" />
-      </IconButton>
+      </button>
 
       {/* Puntos indicadores */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
