@@ -25,7 +25,7 @@ const mockProps: CommonMenuProps = {
       path: 'item-3'
     }
   ],
-  justifyItems: 'start'
+  xUbication: 'start'
 };
 
 jest.mock('next/navigation', () => ({
@@ -60,7 +60,7 @@ describe('Menu', () => {
       },
       menuIconOpened: <></>,
       showCloseButton: true,
-      justifyItems: 'end'
+      xUbication: 'end'
     }
     let component: RenderResult;
     await act(async () => {

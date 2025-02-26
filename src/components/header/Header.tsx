@@ -26,7 +26,7 @@ const Header = () => {
         menuLabel={{ label: 'Menu' }}
         menuIconClosed={<MenuIcon />}
         menuItems={menuItems} 
-        justifyItems='end' 
+        xUbication='end' 
         showCloseButton={true} 
       />
     </div>

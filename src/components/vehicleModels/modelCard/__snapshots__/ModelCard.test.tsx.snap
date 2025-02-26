@@ -5,8 +5,9 @@ exports[`ModelCard should render 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
+      <a
         class="group hover:scale-105 transition-transform duration-300"
+        href="/model-sheet?id=12345"
       >
         <div
           class="flex flex-col items-center p-4"
@@ -50,19 +51,21 @@ exports[`ModelCard should render 1`] = `
               width="300"
             />
           </div>
-          <a
-            class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            href="/model-sheet?id=12345"
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 css-1uent87-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
           >
             Ver Modelo
-          </a>
+          </button>
         </div>
-      </div>
+      </a>
     </div>
   </body>,
   "container": <div>
-    <div
+    <a
       class="group hover:scale-105 transition-transform duration-300"
+      href="/model-sheet?id=12345"
     >
       <div
         class="flex flex-col items-center p-4"
@@ -106,14 +109,15 @@ exports[`ModelCard should render 1`] = `
             width="300"
           />
         </div>
-        <a
-          class="bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          href="/model-sheet?id=12345"
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary bg-black text-white px-4 py-2 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 css-1uent87-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
         >
           Ver Modelo
-        </a>
+        </button>
       </div>
-    </div>
+    </a>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

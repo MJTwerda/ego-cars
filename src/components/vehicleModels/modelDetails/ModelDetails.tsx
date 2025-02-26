@@ -11,7 +11,7 @@ const ModelDetails = ({ vehicleData }: ModelDetailsProps) => {
   return (
     <div className="flex flex-col">
       <ImageTextBlock
-        image={{ src: vehicleData.photo, alt: vehicleData.name, position: 'left', width: '60' }}
+        image={{ src: vehicleData.photo, alt: vehicleData.name, position: 'left' }}
         textInfo={{
           model: vehicleData.name,
           title: { text: vehicleData.title, variant: 'h3' },

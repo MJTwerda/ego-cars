@@ -69,21 +69,25 @@ export default function FilterAndSortSection({ modelList }: FilterAndSortProps) 
       label: "Nada",
       value: SortOptions.RANDOM,
       handleClick: () => handleSortModels(SortOptions.RANDOM),
+      bottomDivider: true
     },
     {
       label: "De menor a mayor precio",
       value: SortOptions.PRICE_ASC,
       handleClick: () => handleSortModels(SortOptions.PRICE_ASC),
+      bottomDivider: true
     },
     {
       label: "De mayor a menor precio",
       value: SortOptions.PRICE_DESC,
       handleClick: () => handleSortModels(SortOptions.PRICE_DESC),
+      bottomDivider: true
     },
     {
       label: "Más nuevos primero",
       value: SortOptions.NEWEST,
       handleClick: () => handleSortModels(SortOptions.NEWEST),
+      bottomDivider: true
     },
     {
       label: "Más viejos primero",
@@ -105,7 +109,7 @@ export default function FilterAndSortSection({ modelList }: FilterAndSortProps) 
           menuIconClosed={<ExpandMoreIcon />}
           menuIconOpened={<ExpandLessIcon />}
           menuItems={vehicleSortMenu} 
-          justifyItems='start' 
+          xUbication='start' 
         />
       </div>
 

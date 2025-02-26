@@ -46,7 +46,8 @@ describe('Testing <ImageTextBlock /> component', () => {
       ...mockPropsWhitoutModel,
       image: {
         ...mockPropsWhitoutModel.image,
-        position: 'right'
+        position: 'right',
+        width: '60%'
       },
       textInfo: {
         ...mockPropsWhitoutModel.textInfo,

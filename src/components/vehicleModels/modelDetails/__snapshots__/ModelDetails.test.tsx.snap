@@ -13,7 +13,7 @@ exports[`ModelDetails should render 1`] = `
         >
           <img
             alt="Model 1"
-            class="rounded lg:w-[60%] lg:mr-12"
+            class="rounded lg:w-1/2 lg:mr-12"
             data-nimg="1"
             decoding="async"
             height="300"
@@ -105,7 +105,7 @@ exports[`ModelDetails should render 1`] = `
       >
         <img
           alt="Model 1"
-          class="rounded lg:w-[60%] lg:mr-12"
+          class="rounded lg:w-1/2 lg:mr-12"
           data-nimg="1"
           decoding="async"
           height="300"
@@ -254,7 +254,7 @@ exports[`ModelDetails should render with highlights info 1`] = `
         >
           <img
             alt="Model 1"
-            class="rounded lg:w-[60%] lg:mr-12"
+            class="rounded lg:w-1/2 lg:mr-12"
             data-nimg="1"
             decoding="async"
             height="300"
@@ -407,7 +407,7 @@ exports[`ModelDetails should render with highlights info 1`] = `
       >
         <img
           alt="Model 1"
-          class="rounded lg:w-[60%] lg:mr-12"
+          class="rounded lg:w-1/2 lg:mr-12"
           data-nimg="1"
           decoding="async"
           height="300"

@@ -133,7 +133,7 @@ exports[`Testing <ImageTextBlock /> component Snapshot component with "model" pr
       >
         <img
           alt="Image 1"
-          class="rounded lg:w-1/2 lg:ml-12"
+          class="rounded lg:w-[60%%] lg:ml-12"
           data-nimg="1"
           decoding="async"
           height="300"
@@ -171,7 +171,7 @@ exports[`Testing <ImageTextBlock /> component Snapshot component with "model" pr
     >
       <img
         alt="Image 1"
-        class="rounded lg:w-1/2 lg:ml-12"
+        class="rounded lg:w-[60%%] lg:ml-12"
         data-nimg="1"
         decoding="async"
         height="300"
