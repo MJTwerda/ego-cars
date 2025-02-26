@@ -58,4 +58,8 @@ O bien podés ejecutar tests individuales utilizando el nombre del archivo con e
 npm run test <Nombre del archivo que se quiere testear>
 ```
 
+Cuando terminen de correr los test vas a poder ver el porcentaje de cobertura que tiene cada Componente.
+
+🍓 Podés ver la Aplicación desplegada acá [https://ego-cars.vercel.app/]
+
 Espero que la Aplicación sea de tu agrado y te diviertas mucho, tando dentro como fuera de ella.
