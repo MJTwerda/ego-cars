@@ -54,7 +54,7 @@ const FilterSectionChips = ({ handleFilterModels, filterLabel }: FilterSectionCh
           menuIconClosed={<ExpandMoreIcon />}
           menuIconOpened={<ExpandLessIcon />}
           menuItems={vehicleFilterTabs}
-          justifyItems='start'
+          xUbication='start'
         />
       </div>
 

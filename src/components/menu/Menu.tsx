@@ -11,7 +11,7 @@ export interface CommonMenuProps {
   menuIconClosed: React.ReactNode;
   menuItems: MenuItemI[];
   showCloseButton?: boolean;
-  justifyItems: 'start' | 'end';
+  xUbication: 'start' | 'end';
 }
 
 const CommonMenu = (
@@ -21,7 +21,7 @@ const CommonMenu = (
     menuIconClosed,
     menuItems,
     showCloseButton,
-    justifyItems
+    xUbication = 'start'
   }: CommonMenuProps) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -34,56 +34,64 @@ const CommonMenu = (
   };
 
   return (
-    <div>
-      <div className="flex justify-center">
-        <Typography variant='body1' className="flex self-center w-3/4">
-          {menuLabel.isStrong ? <strong>{menuLabel.label}</strong> : menuLabel.label}
-        </Typography>
+    <div className="flex">
+      <Typography variant='body1' className="hidden sm:flex self-center w-3/4">
+        {menuLabel.isStrong ? <strong>{menuLabel.label}</strong> : menuLabel.label}
+      </Typography>
 
-        <IconButton onClick={handleClick} data-testid='common_menu_icon_btn'>
-          {open ? menuIconOpened || menuIconClosed : menuIconClosed}
-        </IconButton>
+      <IconButton onClick={handleClick} data-testid='common_menu_icon_btn'>
+        {open ? menuIconOpened || menuIconClosed : menuIconClosed}
+      </IconButton>
 
-        <Menu id="common-menu" anchorEl={anchorEl} open={open} onClose={handleClose}>
-          <div key='close-menu' className={`flex-column justify-items-${justifyItems}`}>
-            {showCloseButton && (
-              <div>
-                <MenuItem onClick={handleClose} data-testid='common_menu_close_btn'>
-                  <p>Cerrar</p>
-                  <ListItemIcon className={`flex justify-${justifyItems}`}>
-                    <CloseIcon fontSize="small" />
-                  </ListItemIcon>
-                </MenuItem>
-              </div>
-            )}
+      <Menu id="common-menu" anchorEl={anchorEl} open={open} onClose={handleClose}>
+        <div>
+          {showCloseButton && (
+            <div className={`flex flex-col items-${xUbication} mb-2`}>
+              <MenuItem
+                onClick={handleClose}
+                data-testid='common_menu_close_btn'
+                sx={{ justifyContent: xUbication, alignContent: 'center' }}
+              >
+                <p className={`flex flex-row justify-${xUbication} items-center text-sm font-thin `}>Cerrar</p>
+                <ListItemIcon
+                  sx={{ display: 'flex', flexDirection: 'column', alignItems: xUbication, justifyContent: 'center' }}
+                >
+                  <CloseIcon fontSize="small" />
+                </ListItemIcon>
+              </MenuItem>
+            </div>
+          )}
 
-            {menuItems.map((menuItem: MenuItemI) => (
-              <div key={menuItem.label}>
-                {menuItem.path ? (
-                  <MenuItem className={`w-56 justify-${justifyItems} mr-9`} data-testid={`common_menu_item_${menuItem.label}`}>
-                    <Link
-                      href={menuItem.path || ''}
-                      data-testid={`common_menu_item_link_${menuItem.path}`}
-                    >
-                      {menuItem.label}
-                    </Link>
-                  </MenuItem>
-                ) : (
-                  <MenuItem
-                    className={`w-56 justify-${justifyItems} mr-9`}
-                    onClick={menuItem.handleClick && menuItem.handleClick}
-                    data-testid={`common_menu_item_${menuItem.label}`}
+          {menuItems.map((menuItem: MenuItemI) => (
+            <div
+              key={menuItem.label}
+              className={`flex flex-col items-${xUbication} mr-6`}>
+              {menuItem.path ? (
+                <MenuItem
+                  sx={{ width: '224px', display: 'flex', flexDirection: 'column', alignItems: xUbication, justifyContent: 'center' }}
+                  data-testid={`common_menu_item_${menuItem.label}`}>
+                  <Link
+                    href={menuItem.path || ''}
+                    data-testid={`common_menu_item_link_${menuItem.path}`}
                   >
                     {menuItem.label}
-                  </MenuItem>
-                )}
-                {menuItem.bottomDivider && <Divider />}
-              </div>
-            )
-            )}
-          </div>
-        </Menu>
-      </div>
+                  </Link>
+                </MenuItem>
+              ) : (
+                <MenuItem
+                  sx={{ width: '224px', display: 'flex', flexDirection: 'column', alignItems: xUbication, justifyContent: 'center' }}
+                  onClick={menuItem.handleClick && menuItem.handleClick}
+                  data-testid={`common_menu_item_${menuItem.label}`}
+                >
+                  {menuItem.label}
+                </MenuItem>
+              )}
+              {menuItem.bottomDivider && <Divider sx={{ width: '100%' }} />}
+            </div>
+          )
+          )}
+        </div>
+      </Menu>
     </div>
   )
 };

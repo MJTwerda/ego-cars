@@ -109,7 +109,7 @@ export default function FilterAndSortSection({ modelList }: FilterAndSortProps) 
           menuIconClosed={<ExpandMoreIcon />}
           menuIconOpened={<ExpandLessIcon />}
           menuItems={vehicleSortMenu} 
-          justifyItems='start' 
+          xUbication='start' 
         />
       </div>
 
